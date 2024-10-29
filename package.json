@@ -1,6 +1,6 @@
 {
   "name": "@zunicornshift/mui-iconify-picker",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "180,000+ icons in one React icon picker by the support of Iconify.",
   "scripts": {
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
