@@ -14,10 +14,10 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import IconifyIcon from "./IconifyIcon";
+import IconifyIcon from "./IconifyIcon.tsx";
 import InfiniteScroll from "react-infinite-scroll-component";
 import {useDebouncedCallback} from "use-debounce";
-import {search} from "./IconifyApiClient";
+import {search} from "./IconifyApiClient.ts";
 
 const API_BASE_URL = "https://api.iconify.design";
 const DEFAULT_LIMIT = 48;
