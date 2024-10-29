@@ -1,6 +1,6 @@
 {
   "name": "@zunicornshift/mui-iconify-picker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "180,000+ icons in one React icon picker by the support of Iconify.",
   "scripts": {
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
@@ -9,6 +9,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zUnicornShift/mui-iconify-picker.git"
