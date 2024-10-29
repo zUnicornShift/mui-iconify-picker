@@ -192,9 +192,6 @@ const IconifyPicker = (
   const outlinedInputSx = props?.inputProps?.sx;
 
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
-  console.log("Test 2");
-  return "Tested";
-
   const [keyword, setKeyword] = useState<string>("");
   const [results, setResults] = useState<string[]>([]);
   const [resultHasMore, setResultHasMore] = useState<boolean>(false);
