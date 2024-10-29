@@ -25,14 +25,14 @@ you have to install them all in your project before installing this module.
 Then run the below commands based on your package manager.
 
 ```
-npm install --save mui-iconify-picker #NPM
-yarn add mui-iconify-picker           #Yarn
+npm install --save @zunicornshift/mui-iconify-picker #NPM
+yarn add @zunicornshift/mui-iconify-picker           #Yarn
 ```
 
 ## Usage
 
 ```
-import IconifyPicker from "mui-iconify-picker";
+import IconifyPicker from "@zunicornshift/mui-iconify-picker";
 
 
 <IconifyPicker />
