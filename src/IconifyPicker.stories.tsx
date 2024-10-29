@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from "@storybook/react";
 
-import IconifyPicker from "./IconifyPicker.tsx";
+import IconifyPicker from "./IconifyPicker";
 
 const meta: Meta<typeof IconifyPicker> = {
   component: IconifyPicker,

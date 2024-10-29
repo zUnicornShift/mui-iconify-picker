@@ -1,3 +1,3 @@
-import IconifyPicker from "./IconifyPicker.tsx";
+import IconifyPicker from "./IconifyPicker";
 
 export default IconifyPicker;
