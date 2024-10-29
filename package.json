@@ -1,5 +1,5 @@
 {
-  "name": "mui-iconify-picker",
+  "name": "@unicornshift/mui-iconify-picker",
   "version": "0.0.1",
   "description": "180,000+ icons in one React icon picker by the support of Iconify.",
   "scripts": {

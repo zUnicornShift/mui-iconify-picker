@@ -1,4 +1,4 @@
-# mui-iconify-picker
+# @unicornshift/mui-iconify-picker
 
 <p align="center">
 	<a href="https://github.com/zUnicornShift/mui-iconify-picker">
