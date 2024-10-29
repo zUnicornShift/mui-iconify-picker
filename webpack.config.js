@@ -1,5 +1,6 @@
 const path = require("path");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
@@ -12,7 +13,16 @@ module.exports = {
     library: "@zunicornshift/mui-iconify-picker",
     libraryTarget: "commonjs",
   },
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [
+      new CleanWebpackPlugin(),
+      new CopyPlugin({
+      patterns: [
+          { from: "src/index.d.ts", to: "./" },
+          { from: "package.json", to: "./" },
+          { from: "README.md", to: "./" },
+      ],
+    }),
+  ],
   module: {
     rules: [
       {
@@ -31,4 +41,5 @@ module.exports = {
       },
     ],
   },
+  devtool: "source-map",
 };
