@@ -6,6 +6,7 @@ const external = require("rollup-plugin-peer-deps-external");
 const postcss = require("rollup-plugin-postcss");
 const svg = require("rollup-plugin-svg");
 const json = require("@rollup/plugin-json");
+const nodePolyfills = require("rollup-plugin-polyfill-node");
 
 const packageJson = require("./package.json");
 
@@ -27,12 +28,13 @@ module.exports = {
   external: ["react", "react-dom", "@mui/material"],
   plugins: [
     external(),
-    resolve(),
+    resolve({preferBuiltins: true, browser: true}),
     commonjs(),
     typescript({tsconfig: "./tsconfig.json"}),
     postcss(),
     terser(),
-    svg(),
+    svg({base64: true}),
     json(),
+    nodePolyfills(),
   ],
 };

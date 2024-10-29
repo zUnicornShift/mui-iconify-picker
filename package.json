@@ -66,6 +66,7 @@
     "prettier": "^3.3.3",
     "rollup": "^4.24.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-polyfill-node": "^0.13.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svg": "^2.0.0",
     "storybook": "^8.3.6",
