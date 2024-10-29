@@ -1,17 +1,17 @@
-import * as React from "react";
+import React, {Fragment, MouseEvent, useMemo, useState} from "react";
 import IconButton from "@mui/material/IconButton";
 import loadingLoopIcon from "./assets/line-md--loading-alt-loop.svg";
 
 export interface IconifyIconProps {
   baseUrl: string | URL;
   icon: string;
-  onClick: (e: React.MouseEvent<HTMLElement>) => void;
+  onClick: (e: MouseEvent<HTMLElement>) => void;
 }
 
 const IconifyIcon = (props: IconifyIconProps) => {
-  const [loading, setLoading] = React.useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  const url = React.useMemo(() => {
+  const url = useMemo(() => {
     const iconSplitted = props.icon.split(":");
     const url = new URL(
       `/${iconSplitted[0]}/${iconSplitted[1]}.svg?height=24`,
@@ -23,7 +23,7 @@ const IconifyIcon = (props: IconifyIconProps) => {
   const handleLoadIcon = () => setLoading(false);
 
   return (
-    <React.Fragment>
+    <Fragment>
       {loading && (
         <IconButton disabled size="small">
           <img src={loadingLoopIcon} />
@@ -36,7 +36,7 @@ const IconifyIcon = (props: IconifyIconProps) => {
           style={loading ? {display: "none"} : undefined}
         />
       </IconButton>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
