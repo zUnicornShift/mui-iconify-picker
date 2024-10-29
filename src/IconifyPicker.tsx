@@ -23,11 +23,11 @@ const API_BASE_URL = "https://api.iconify.design";
 const DEFAULT_LIMIT = 48;
 
 export interface LoadingComponentProps {
-  count: number;
+  count?: number;
 }
 
 const LoadingComponent = (props: LoadingComponentProps) =>
-  Array(props.count)
+  Array(props.count || 20)
     .fill(0)
     .map((_, index) => (
       <IconButton disabled key={index} size="small">
@@ -168,7 +168,7 @@ export interface IconifyPickerProps<V, I> {
     loading?: React.ComponentType<LoadingComponentProps>;
     error?: React.ComponentType;
   };
-  apiBaseUrl?: string;
+  apiBaseUrl?: string | URL;
   initIcons?: string[];
   prefixes?: string;
   prefix?: string;
@@ -301,18 +301,18 @@ const IconifyPicker = (
         inputProps={{
           onClick: handleClickPickerButton,
           "data-size": size,
-          "data-api-base-url": apiBaseUrl,
+          "data-api-base-url": apiBaseUrl.toString(),
           value,
         }}
         inputComponent={InputInputComponent}
       />
       <Popover
-        {...props?.popoverProps}
-        open={!!anchorEl}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
         }}
+        {...props?.popoverProps}
+        open={!!anchorEl}
         anchorEl={anchorEl}
         PaperProps={{...paperProps, ...props?.popoverProps?.PaperProps}}
         onClose={handleClosePopover}>
