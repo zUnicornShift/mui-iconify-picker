@@ -2,7 +2,7 @@
 
 <p align="center">
 	<a href="https://github.com/zUnicornShift/mui-iconify-picker">
-			<img src="./screenshot.png" />
+			<img src="https://i.imgur.com/jKc5PtP.png" />
 	</a>
 </p>
 
