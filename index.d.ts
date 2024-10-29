@@ -26,10 +26,10 @@ export interface IconifyPickerProps<V, I> {
   variant?: V;
 }
 
-declare class IconifyPicker extends React.Component<
+declare const IconifyPicker: React.FunctionComponent<
   | IconifyPickerProps<"filled", FilledInputProps>
   | IconifyPickerProps<"standard", InputProps>
   | IconifyPickerProps<"outlined", OutlinedInputProps>
-> {}
+>;
 
 export default IconifyPicker;

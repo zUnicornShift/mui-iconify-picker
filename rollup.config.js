@@ -16,13 +16,13 @@ module.exports = {
     {
       file: packageJson.main,
       format: "cjs",
-      sourcemap: true,
+      sourcemap: false,
       name: packageJson.name,
     },
     {
       file: packageJson.module,
       format: "esm",
-      sourcemap: true,
+      sourcemap: false,
     },
   ],
   external: ["react", "react-dom", "@mui/material"],
