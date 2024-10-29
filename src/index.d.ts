@@ -2,6 +2,7 @@ import {InputProps} from "@mui/material/Input";
 import {FilledInputProps} from "@mui/material/FilledInput";
 import {PopoverProps} from "@mui/material/Popover";
 import {OutlinedInputProps} from "@mui/material/OutlinedInput";
+import React from "react";
 
 export interface IconifyPickerProps<V, I> {
   inputProps?: Omit<I, "inputComponent">;
@@ -25,10 +26,10 @@ export interface IconifyPickerProps<V, I> {
   variant?: V;
 }
 
-type IconifyPicker = React.ComponentClass<
+declare class IconifyPicker extends React.Component<
   | IconifyPickerProps<"filled", FilledInputProps>
   | IconifyPickerProps<"standard", InputProps>
   | IconifyPickerProps<"outlined", OutlinedInputProps>
->;
+> {}
 
 export default IconifyPicker;
