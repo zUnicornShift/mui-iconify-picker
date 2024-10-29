@@ -1,8 +1,7 @@
 {
   "name": "mui-iconify-picker",
   "version": "0.0.1",
-  "description": "Iconify Icon Picker",
-  "main": "index.js",
+  "description": "180,000+ icons in one React icon picker by the support of Iconify.",
   "scripts": {
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "lint": "eslint src/**/*.{ts,tsx}",
