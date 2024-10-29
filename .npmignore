@@ -1,0 +1,12 @@
+node_modules/
+src/
+.storybook/
+.github/
+.git/
+.babelrc
+.gitignore
+.prettierrc
+eslint.config.mjs
+rollup.config.js
+screenshot.png
+tsconfig.json
