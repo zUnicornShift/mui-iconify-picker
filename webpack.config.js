@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
-    library: "@unicornshift/mui-iconify-picker",
+    library: "@zunicornshift/mui-iconify-picker",
     libraryTarget: "commonjs",
   },
   plugins: [new CleanWebpackPlugin()],
