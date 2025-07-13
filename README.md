@@ -17,9 +17,9 @@ The `react`, `react-dom` and `@mui/material` are peer dependencies of this packa
 you have to install them all in your project before installing this module.
 
 ```
-"@mui/material": "^5.0.0 || ^6.0.0"
-"react": "^17.0.0 || ^18.0.0"
-"react-dom": "^17.0.0 || ^18.0.0"
+"@mui/material": ">=5.0.0 <8.0.0",
+"react": "^19.1.0",
+"react-dom": ">=17.0.0 <20.0.0"
 ```
 
 Then run the below commands based on your package manager.
