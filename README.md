@@ -18,7 +18,7 @@ you have to install them all in your project before installing this module.
 
 ```
 "@mui/material": ">=5.0.0 <8.0.0",
-"react": "^19.1.0",
+"react": ">=17.0.0 <20.0.0",
 "react-dom": ">=17.0.0 <20.0.0"
 ```
 
