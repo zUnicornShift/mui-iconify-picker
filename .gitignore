@@ -133,3 +133,7 @@ dist
 exampledist
 
 *storybook.log
+
+# Lock file
+package-lock.json
+yarn.lock
